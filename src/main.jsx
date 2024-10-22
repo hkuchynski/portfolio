@@ -17,8 +17,8 @@ import App from './App.jsx'
 /**
  * CSS links
  */
-import './index.css'
-import 'lenis/dist/lenis.css'
+import './index.css';
+import 'lenis/dist/lenis.css';
 
 
 createRoot(document.getElementById('root')).render(
