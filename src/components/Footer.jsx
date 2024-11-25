@@ -1,10 +1,4 @@
 /**
- * @copyright 2024 codewithsadee
- * @license Apache-2.0
- */
-
-
-/**
  * Components
  */
 import { ButtonPrimary } from './Button';
@@ -19,12 +13,12 @@ const sitemap = [
       href: '#about'
     },
     {
-      label: 'Work',
-      href: '#work'
+      label: 'Skills',
+      href: '#skills'
     },
     {
-      label: 'Reviews',
-      href: '#reviews'
+      label: 'Work',
+      href: '#work'
     },
     {
       label: 'Contact me',
@@ -48,10 +42,6 @@ const socials = [
     {
       label: 'Instagram',
       href: 'https://www.instagram.com/codewithsadee'
-    },
-    {
-      label: 'CodePen',
-      href: 'https://codepen.io/codewithsadee'
     }
 ];
 
@@ -100,7 +90,7 @@ const Footer = () => {
                             <p className="mb-2 reveal-up">Socials</p>
 
                             <ul>
-                                {sitemap.map(({ label, href }, key) => (
+                                {socials.map(({ label, href }, key) => (
                                     <li key={key}>
                                         <a
                                             href={href}
@@ -134,7 +124,7 @@ const Footer = () => {
                     </a>
 
                     <p className="text-zinc-500 text-sm reveal-up">
-                        &copy; 2025 <span className="text-zinc-200">codewithsadee</span>
+                        &copy; 2025 <span className="text-zinc-200">Hanna Kuchynski</span>
                     </p>
                 </div>
 

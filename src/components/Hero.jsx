@@ -1,13 +1,22 @@
-/**
- * @copyright 2024 codewithsadee
- * @license Apache-2.0
- */
-
-
 import { ButtonPrimary, ButtonOutline } from './Button';
 
 
 const Hero = () => {
+
+    const onDownloadButtonClick = () => {
+        fetch("/assets/hanna-nekhniadovich-cv.pdf").then((response) => {
+            response.blob().then((blob) => {
+                const fileURL = window.URL.createObjectURL(blob);
+                    
+                let alink = document.createElement("a");
+                alink.href = fileURL;
+                alink.download = "hanna-nekhniadovich-cv.pdf";
+                alink.click();
+            });
+        });
+    };
+
+
   return (
     <section 
         id="home" 
@@ -19,7 +28,7 @@ const Hero = () => {
                 <div className="flex items-center gap-3">
                     <figure className="img-box w-9 h-9 rounded-lg">
                         <img 
-                            src="/images/avatar-1.jpg"
+                            src="/images/avatar.jpg"
                             width={40}
                             height={40}
                             alt="Hanna Kuchynski portrait" 
@@ -36,15 +45,15 @@ const Hero = () => {
                     </div>
                 </div>
                 <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">
-                    Building Scalable Modern Websites for the Future
+                    Developing Scalable Modern Innovative Websites for the Future
                 </h2>
 
                 <div className="flex items-center gap-3">
                     <ButtonPrimary 
+                        download={onDownloadButtonClick}
                         label="Download CV"
                         icon="download"
                     />
-
                     <ButtonOutline 
                         href="#about"
                         label="Scroll down"

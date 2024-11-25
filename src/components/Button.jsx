@@ -1,11 +1,4 @@
 /**
- * @copyright 2024 codewithsadee
- * @license Apache-2.0
- */
-
-
-
-/**
  * Node modules
  */
 import PropTypes from 'prop-types'
@@ -19,7 +12,8 @@ const ButtonPrimary = ({
     target = 'self',
     label,
     icon,
-    classes
+    classes,
+    download
 }) => {
   if(href) {
     return (
@@ -41,7 +35,10 @@ const ButtonPrimary = ({
     )
   } else {
     return (
-        <button className={"btn btn-primary " + classes}>
+        <button 
+            className={"btn btn-primary " + classes}
+            onClick={download && download}    
+        >
             {label}
 
             {icon ? 
@@ -51,6 +48,7 @@ const ButtonPrimary = ({
                 </span>
                 : undefined
             }
+            
         </button>
     )
   }

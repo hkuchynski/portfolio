@@ -1,9 +1,3 @@
-/**
- * @copyright 2024 codewithsadee
- * @license Apache-2.0
- */
-
-
 const socialLinks = [
     {
       href: 'https://www.github.com/codewithsadee-org',
