@@ -6,9 +6,9 @@ import SkillCard from './SkillCard';
 
 const skillItem = [
     {
-      imgSrc: '/images/figma.svg',
-      label: 'Figma',
-      desc: 'Design tool'
+      imgSrc: '/images/javascript.svg',
+      label: 'JavaScript',
+      desc: 'Interaction'
     },
     {
       imgSrc: '/images/css3.svg',
@@ -16,9 +16,9 @@ const skillItem = [
       desc: 'User Interface'
     },
     {
-      imgSrc: '/images/javascript.svg',
-      label: 'JavaScript',
-      desc: 'Interaction'
+      imgSrc: '/images/figma.svg',
+      label: 'Figma',
+      desc: 'Design tool'
     },
     {
       imgSrc: '/images/nodejs.svg',
@@ -31,13 +31,13 @@ const skillItem = [
       desc: 'Node Framework'
     },
     {
-      imgSrc: '/images/mongodb.svg',
-      label: 'MongoDB',
-      desc: 'Database'
-    },
-    {
       imgSrc: '/images/react.svg',
       label: 'React',
+      desc: 'Framework'
+    },
+    {
+      imgSrc: '/images/angular.svg',
+      label: 'Angular',
       desc: 'Framework'
     },
     {
@@ -45,6 +45,26 @@ const skillItem = [
       label: 'TailwindCSS',
       desc: 'User Interface'
     },
+    {
+      imgSrc: '/images/html-5.svg',
+      label: 'HTML5',
+      desc: 'User Interface'
+    },
+    {
+      imgSrc: '/images/mongodb.svg',
+      label: 'MongoDB',
+      desc: 'Database'
+    },
+    {
+      imgSrc: '/images/typescript.svg',
+      label: 'Typescript',
+      desc: 'Interaction'
+    },
+    {
+      imgSrc: '/images/git.svg',
+      label: 'Git',
+      desc: 'Version Control'
+    }
 ];
 
 
