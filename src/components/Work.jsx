@@ -5,41 +5,37 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
     {
-      imgSrc: '/images/project-1.jpg',
-      title: 'Full stack music app',
-      tags: ['API', 'MVC', 'Development'],
-      projectLink: 'https://musify-5al0.onrender.com/'
-    },
-    {
-      imgSrc: '/images/project-2.jpg',
-      title: 'Free stock photo app',
-      tags: ['API', 'SPA'],
-      projectLink: 'https://pixstock-official.vercel.app/'
-    },
-    {
-      imgSrc: '/images/project-3.jpg',
-      title: 'Recipe app',
-      tags: ['Development', 'API'],
-      projectLink: ''
-    },
-    {
-      imgSrc: '/images/project-4.jpg',
-      title: 'Real state website',
+      imgSrc: '/images/forkify.png',
+      title: 'Recipe Search App',
       tags: ['Web-design', 'Development'],
-      projectLink: 'https://github.com/codewithsadee-org/wealthome'
+      projectLinks: ['https://github.com/hkuchynski/forkify', 'https://google.com/', '/images/forkify.gif'],
+      dataCaption: "Small recipe search app built with React, Redux, Redux Saga, Redux Persist. Design credit to Jonas Schmedtmann.",
+      project: '1'
     },
     {
-      imgSrc: '/images/project-5.jpg',
-      title: 'eCommerce website',
-      tags: ['eCommerce', 'Development'],
-      projectLink: 'https://github.com/codewithsadee/anon-ecommerce-website'
-    },
-    {
-      imgSrc: '/images/project-6.jpg',
-      title: 'vCard Personal portfolio',
+      imgSrc: '/images/therafolio.png',
+      title: 'Massage Therapist Portfolio',
       tags: ['Web-design', 'Development'],
-      projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
+      projectLinks: ['https://github.com/hkuchynski/therafolio', 'https://google.com/', '/images/therafolio.gif'],
+      dataCaption: "This is a one-page portfolio of a massage therapist built with HTML5 and Sass.",
+      project: '2'
     },
+    {
+      imgSrc: '/images/omnifood.png',
+      title: 'Food Service Site',
+      tags: ['Web-design', 'Development'],
+      projectLinks: ['https://github.com/hkuchynski/omnifood', 'https://google.com/', '/images/omnifood.gif'],
+      dataCaption: "This is a one-page landing site of a food service company build with HTML5 and CSS3.",
+      project: '3'
+    },
+    {
+      imgSrc: '/images/budgety.png',
+      title: 'Budget App',
+      tags: ['Web-design', 'Development'],
+      projectLinks: ['https://github.com/hkuchynski/budgety', 'https://google.com/', '/images/budgety.gif'],
+      dataCaption: "A web app to manage your budget made with HTML, CSS, Javascript.",
+      project: '4'
+    }
 ];
 
 const Work = () => {
@@ -55,18 +51,19 @@ const Work = () => {
             </h2>
 
             <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-                {works.map(({ imgSrc, title, tags, projectLink }, key) => (
+                {works.map(({ imgSrc, title, tags, projectLinks, dataCaption, project }, key) => (
                     <ProjectCard 
                         key={key}
                         imgSrc={imgSrc}
                         title={title}
                         tags={tags}
-                        projectLink={projectLink}
+                        projectLinks={projectLinks}
+                        dataCaption={dataCaption}
                         classes="reveal-up"
+                        project={project}
                     />
                 ))}
             </div>
-
         </div>
 
     </section>
