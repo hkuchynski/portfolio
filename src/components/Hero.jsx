@@ -4,13 +4,13 @@ import { ButtonPrimary, ButtonOutline } from './Button';
 const Hero = () => {
 
     const onDownloadButtonClick = () => {
-        fetch("/assets/hanna-nekhniadovich-cv.pdf").then((response) => {
+        fetch('/assets/hanna-kuchynski-cv.pdf').then((response) => {
             response.blob().then((blob) => {
                 const fileURL = window.URL.createObjectURL(blob);
                     
                 let alink = document.createElement("a");
                 alink.href = fileURL;
-                alink.download = "hanna-nekhniadovich-cv.pdf";
+                alink.download = 'hanna-kuchynski-cv.pdf';
                 alink.click();
             });
         });
@@ -66,7 +66,7 @@ const Hero = () => {
                 <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25%
                 via-sky-400/40 to-65% rounded-[60px] overflow-hidden">
                     <img 
-                        src="/images/hanna-hero.png" 
+                        src="/images/hanna-banner.png" 
                         width={656}
                         height={800}
                         alt="Henry Clark" 

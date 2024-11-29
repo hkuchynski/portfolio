@@ -39,10 +39,10 @@ const socials = [
       label: 'Twitter X',
       href: 'https://x.com/hanna95998'
     },
-    {
-      label: 'Instagram',
-      href: 'https://www.instagram.com/_hanya_/'
-    }
+    // {
+    //   label: 'Instagram',
+    //   href: ''
+    // }
 ];
 
 const Footer = () => {
