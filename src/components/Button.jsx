@@ -19,7 +19,7 @@ const ButtonPrimary = ({
     return (
         <a
             href={href}
-            target={target}
+            //target={target}
             className={"btn btn-primary " + classes}
         >
             {label}
@@ -65,12 +65,11 @@ ButtonPrimary.propTypes = {
 
 
 /**
- * Outine Button
+ * Outline Button
  */
 
 const ButtonOutline = ({
     href,
-    target = 'self',
     label,
     icon,
     classes
@@ -79,7 +78,7 @@ const ButtonOutline = ({
     return (
         <a
             href={href}
-            target={target}
+            //target={target}
             className={"btn btn-outline " + classes}
         >
             {label}
