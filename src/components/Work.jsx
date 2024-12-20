@@ -7,12 +7,20 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
     {
+      imgSrc: '/images/crwn-clothing.png',
+      title: 'Clothing Shop App',
+      tags: ['Development', 'API', 'eCommerce'],
+      projectLinks: ['https://github.com/hkuchynski/e-commerce-project', 'https://kuchynski-shop.netlify.app/', '/images/crwn-clothing.gif'],
+      dataCaption: "E-commerce app built with React, React Dom, Redux, Redux Persist, Firebase, Stripe API. Design credit to Andrei Neagoie and Yihua Zhang",
+      project: '1'
+    },
+    {
       imgSrc: '/images/ARCoreNav.png',
       title: 'Indoor Navigation App',
       tags: ['Development', 'ARCore', 'API'],
       projectLinks: ['https://github.com/hkuchynski/Indoor-Navigation-ARCore', 'https://drive.google.com/file/d/1aOgRdCclyzSEfzeBDCU_U1xVcjSofOvg/view', '/images/ARCoreNav.png'],
       dataCaption: "This is an Android navigation app built in Unity3D using Google ARCore. It features mapping, localization and navigation as part of assistive technology for BVI and ASD people. It was implemented with Google’s ARCore platform for building augmented reality experiences. The app uses A* Pathfinding algorithm to find the shortest path for the navigation. It facilitates the navigation by adding navigation voice commands. Utilized: Google ARCore, C#, Unity3D, NavMesh, Google Speech API",
-      project: '1'
+      project: '2'
     },
     {
       imgSrc: '/images/therafolio.png',
@@ -20,7 +28,7 @@ const works = [
       tags: ['Web-design', 'Development'],
       projectLinks: ['https://github.com/hkuchynski/therafolio', 'https://hkuchynski.github.io/therafolio/', '/images/therafolio.gif'],
       dataCaption: "This is a one-page portfolio of a massage therapist built with HTML5 and Sass.",
-      project: '2'
+      project: '3'
     },
     {
       imgSrc: '/images/omnifood.jpg',
@@ -28,14 +36,6 @@ const works = [
       tags: ['Web-design', 'Development'],
       projectLinks: ['https://github.com/hkuchynski/omnifood', 'https://hkuchynski.github.io/omnifood/', '/images/omnifood.gif'],
       dataCaption: "This is a one-page landing site of a food service company build with HTML5 and CSS3.",
-      project: '3'
-    },
-    {
-      imgSrc: '/images/budgety.png',
-      title: 'Budget App',
-      tags: ['Web-design', 'Development'],
-      projectLinks: ['https://github.com/hkuchynski/budgety', 'https://hkuchynski.github.io/budgety/', '/images/budgety.gif'],
-      dataCaption: "A web app to manage your budget made with HTML, CSS, Javascript.",
       project: '4'
     }
 ];
