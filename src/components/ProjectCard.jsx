@@ -94,6 +94,7 @@ Fancybox.bind('[data-fancybox="project-1"]');
 Fancybox.bind('[data-fancybox="project-2"]');
 Fancybox.bind('[data-fancybox="project-3"]');
 Fancybox.bind('[data-fancybox="project-4"]');
+Fancybox.bind('[data-fancybox="project-5"]');
 
 
 export default ProjectCard

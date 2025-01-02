@@ -5,13 +5,15 @@ import ProjectCard from "./ProjectCard";
 
 // tags: ['API', 'MVC', 'Development', 'SPA', 'Web-design', 'eCommerce']
 
+// Note: to add a project 1. add description to array works[] in Work.jsx, 2. bind fancybox with a project number in projectCard.jsx
+
 const works = [
     {
       imgSrc: '/images/crwn-clothing.png',
-      title: 'Clothing Shop App',
+      title: 'Clothing Store App',
       tags: ['Development', 'API', 'eCommerce'],
       projectLinks: ['https://github.com/hkuchynski/e-commerce-project', 'https://kuchynski-shop.netlify.app/', '/images/crwn-clothing.gif'],
-      dataCaption: "E-commerce app built with React, React Dom, Redux, Redux Persist, Firebase, Stripe API. Design credit to Andrei Neagoie and Yihua Zhang",
+      dataCaption: "eCommerce app built with React, React Dom, Redux, Redux Persist, Firebase, Stripe API. Design credit to Andrei Neagoie and Yihua Zhang.",
       project: '1'
     },
     {
@@ -23,21 +25,45 @@ const works = [
       project: '2'
     },
     {
-      imgSrc: '/images/therafolio.png',
-      title: 'Massage Therapist Portfolio',
-      tags: ['Web-design', 'Development'],
-      projectLinks: ['https://github.com/hkuchynski/therafolio', 'https://hkuchynski.github.io/therafolio/', '/images/therafolio.gif'],
-      dataCaption: "This is a one-page portfolio of a massage therapist built with HTML5 and Sass.",
+      imgSrc: '/images/proshop.png',
+      title: 'eCommerce Platform',
+      tags: ['Development', 'API', 'eCommerce'],
+      projectLinks: ['https://github.com/hkuchynski/proshop-ecommerce', 'https://proshop-ecommerce-vo8m.onrender.com/', '/images/proshop.gif'],
+      dataCaption: "eCommerce platform built with the MERN stack & Redux. Design credit to Brad Traversy.",
       project: '3'
     },
     {
-      imgSrc: '/images/omnifood.jpg',
-      title: 'Food Service Site',
+      imgSrc: '/images/natours.png',
+      title: 'Tours Services Site',
       tags: ['Web-design', 'Development'],
-      projectLinks: ['https://github.com/hkuchynski/omnifood', 'https://hkuchynski.github.io/omnifood/', '/images/omnifood.gif'],
-      dataCaption: "This is a one-page landing site of a food service company build with HTML5 and CSS3.",
+      projectLinks: ['https://github.com/hkuchynski/natours', 'https://hkuchynski.github.io/natours/', '/images/natours.gif'],
+      dataCaption: "This is a one-page landing site of a company that offers tours in the nature built with HTML5 and Sass.",
       project: '4'
-    }
+    },
+    {
+      imgSrc: '/images/nexter.png',
+      title: 'Real Estate Site',
+      tags: ['Web-design', 'Development'],
+      projectLinks: ['https://github.com/hkuchynski/nexter', 'https://hkuchynski.github.io/nexter/', '/images/nexter.gif'],
+      dataCaption: "This is a landing page of a company that sells luxury homes across the world built with HTML5 and Sass.",
+      project: '5'
+    },
+     // {
+    //   imgSrc: '/images/therafolio.png',
+    //   title: 'Massage Therapist Portfolio',
+    //   tags: ['Web-design', 'Development'],
+    //   projectLinks: ['https://github.com/hkuchynski/therafolio', 'https://hkuchynski.github.io/therafolio/', '/images/therafolio.gif'],
+    //   dataCaption: "This is a one-page portfolio of a massage therapist built with HTML5 and Sass.",
+    //   project: '4'
+    // },
+    // {
+    //   imgSrc: '/images/omnifood.jpg',
+    //   title: 'Food Service Site',
+    //   tags: ['Web-design', 'Development'],
+    //   projectLinks: ['https://github.com/hkuchynski/omnifood', 'https://hkuchynski.github.io/omnifood/', '/images/omnifood.gif'],
+    //   dataCaption: "This is a one-page landing site of a food service company build with HTML5 and CSS3.",
+    //   project: '5'
+    // },
 ];
 
 const Work = () => {
