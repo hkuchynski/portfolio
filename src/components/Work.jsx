@@ -33,12 +33,20 @@ const works = [
       project: '3'
     },
     {
+      imgSrc: '/images/jsketch-cli.png',
+      title: 'jSketch CLI',
+      tags: ['Development', 'Typescript', 'CLI'],
+      projectLinks: ['https://github.com/hkuchynski/jsketch-cli', 'https://www.npmjs.com/package/jsketch-cli?activeTab=code', '/images/jsketch-cli.gif'],
+      dataCaption: "A CLI to launch an interactive development environment for writing and documenting code. Built with React, Redux, Typescript. Design credit to Stephen Grider.",
+      project: '4'
+    },
+    {
       imgSrc: '/images/natours.png',
       title: 'Tours Services Site',
       tags: ['Web-design', 'Development'],
       projectLinks: ['https://github.com/hkuchynski/natours', 'https://hkuchynski.github.io/natours/', '/images/natours.gif'],
       dataCaption: "This is a one-page landing site of a company that offers tours in the nature built with HTML5 and Sass.",
-      project: '4'
+      project: '5'
     },
     {
       imgSrc: '/images/nexter.png',
@@ -48,6 +56,7 @@ const works = [
       dataCaption: "This is a landing page of a company that sells luxury homes across the world built with HTML5 and Sass.",
       project: '5'
     },
+    
      // {
     //   imgSrc: '/images/therafolio.png',
     //   title: 'Massage Therapist Portfolio',
