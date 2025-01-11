@@ -5,7 +5,7 @@ const aboutItems = [
   },
   {
     label: 'Years of experience',
-    number: 7
+    number: 5
   }
 ];
 
@@ -22,7 +22,7 @@ const About = () => {
                 <p className="text-zinc-300 mb-4 md:mb-8
                 md:text-xl md:max-w-[60ch]">
                     Welcome! I&apos;m Hanna, 
-                    a highly skilled and results-driven Software Engineer with over 7 years of experience 
+                    a highly skilled and results-driven Software Engineer with over 5 years of experience 
                     in developing dynamic, high-performance web applications. 
                     Proficient in modern JavaScript frameworks, including React, Node.js, and Angular, 
                     with a strong foundation in front-end and back-end development. 
