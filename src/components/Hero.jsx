@@ -4,13 +4,13 @@ import { ButtonPrimary, ButtonOutline } from './Button';
 const Hero = () => {
 
     const onDownloadButtonClick = () => {
-        fetch('/assets/hanna-kuchynski-cv.pdf').then((response) => {
+        fetch('/assets/hanna-kuchynski-software-engineer.pdf').then((response) => {
             response.blob().then((blob) => {
                 const fileURL = window.URL.createObjectURL(blob);
                     
                 let alink = document.createElement("a");
                 alink.href = fileURL;
-                alink.download = 'hanna-kuchynski-cv.pdf';
+                alink.download = 'hanna-kuchynski-software-engineer.pdf';
                 alink.click();
             });
         });
